@@ -37,6 +37,18 @@ const HD_WRAP_HANDLER = () => {
 
 window.addEventListener('scroll', HD_WRAP_HANDLER);
 
+
+//search
+
+let SEARCH = document.querySelector(".find");
+click.addEventListener(SEARCH, function () {
+    it.parentElement.classList.add('on')
+})
+
+
+//..^^어떻게하는거냑
+
+
 //mainVisual
 
 const MAIN_VISUAL_SLIDE_OPTION = {
@@ -61,11 +73,7 @@ const MAIN_COLLECTION_SLIDE_OPTION = {
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
-        type: "progressbar",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        clickable: true,
     },
 }
 
@@ -75,11 +83,15 @@ const MAIN_COLLECTION_SLIDE = new Swiper('.collection_pro', MAIN_COLLECTION_SLID
 
 const STYLEBOARD_SLIDE_OPTION = {
 
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 }
 
@@ -107,17 +119,17 @@ function loginCheck() {
     let loginForm = document.loginForm;
     let mb_id = document.getElementById('mb_id').value;
     let mb_pw = document.getElementById('mb_pw').value;
-    
-    if(mb_id == ""){
+
+    if (mb_id == "") {
         alert("아이디를 입력해주세요.");
     } else if (mb_pw == "") {
-        alert ("비밀번호를 입력해주세요.");
+        alert("비밀번호를 입력해주세요.");
     } else {
         loginForm.submit();
-        alert ("로그인에 성공했습니다!")
+        alert("로그인에 성공했습니다!")
         loginForm.action = "<?php echo G5_THEME_URL ?>/index.php";
-//인덱스로 이동할수 있는지 시험해보기
-//submit - action 데이터 이동
+        //인덱스로 이동할수 있는지 시험해보기
+        //submit - action 데이터 이동
     }
 
 }
@@ -128,19 +140,19 @@ function loginCheck() {
 Kakao.init('b528263edc5755e1f0893bb6f79851b3');
 function kakaoLogin() {
     Kakao.Auth.login({
-      success: function (response) {
-        Kakao.API.request({
-          url: '/v2/user/me',
-          success: function (response) {
-        	  console.log(response)
-          },
-          fail: function (error) {
+        success: function (response) {
+            Kakao.API.request({
+                url: '/v2/user/me',
+                success: function (response) {
+                    console.log(response)
+                },
+                fail: function (error) {
+                    console.log(error)
+                },
+            })
+        },
+        fail: function (error) {
             console.log(error)
-          },
-        })
-      },
-      fail: function (error) {
-        console.log(error)
-      },
+        },
     })
-  }
+}

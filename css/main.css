@@ -35,6 +35,10 @@ h3 {
     margin: 30px 0 40px 0;
 }
 
+.red {
+    color: #C10000
+}
+
 .more {
     display: inline-block;
 
@@ -45,6 +49,7 @@ h3 {
 
     text-align: center;
 }
+
 
 
 .topBanner {
@@ -84,7 +89,6 @@ h3 {
 
 
 #header.on {
-
     background: #ffffffcb;
     color: #000;
 }
@@ -104,9 +108,22 @@ h3 {
     color: #000;
 }
 
+
+/* 검색창 만들기 */
+
+#search {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    width: 0;
+}
+
+
+
 #header .hdWrap.on {
     background: rgba(255, 255, 255, 1);
-    color: #444;
+    color: #000;
 }
 
 
@@ -128,6 +145,10 @@ h3 {
     background: url(../img/logo2.svg) no-repeat left center;
 }
 
+#header.on .hdWrap h1 a {
+    background: url(../img/logo2.svg) no-repeat left center;
+}
+
 #header .hdWrap .gnb {
     width: 1200px;
     margin: 0 auto;
@@ -143,6 +164,8 @@ h3 {
     font-size: 25px;
     margin: 0 5px;
 }
+
+
 
 #header .gnb {
     display: flex;
@@ -195,7 +218,7 @@ h3 {
 
 #mainVisual .itm .slogan {
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1200px;
@@ -208,17 +231,18 @@ h3 {
     font-weight: 700;
     line-height: 1.3;
     top: 100px;
-    margin: 0 0 10px 0;
+    margin: 0 0 50px 0;
 }
 
 #mainVisual .itm .slogan p {
     color: #000;
     font-size: 20px;
     font-weight: 500;
+    margin: 0 0 50px 0;
 }
 
 #mainVisual .itm .slogan a {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #mainVisual .swiper-pagination {
@@ -449,23 +473,22 @@ h3 {
 /* COLLECTION - COLLECTION SLIDE */
 
 #collection {
-    padding: 100px 0;
-    background: #f2f2f2;
+    padding: 50px 0 100px 0;
+    background: #f5f5f5;
 }
 
+.swiper .swiper-pagination-bullet {
+    background-color: #000;
 
-.collection_pro .swiper-wrapper {}
-
-
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    color: #000;
-    margin-left: 50px !important;
 }
 
-.collection_pro .swiper-pagination-bullet-active {
-    color: #000 !important;
+.collection_pro .swiper-pagination {
+    bottom: 0px;
+    z-index: 999 !important;
+}
+
+.collection_pro {
+    height: 550px;
 }
 
 /* STYLE BOARD SECTION - STYLEBOARD SLIDE */
@@ -475,9 +498,35 @@ h3 {
 }
 
 
+.style_board {
+    height: 550px;
+}
+
+
+.style_board .swiper-pagination-progressbar-fill {
+    background: #000 !important;
+}
+
+
+.style_board .swiper-pagination-horizontal {
+    position: absolute !important;
+    transform: translate(0, 540px) !important;
+}
+
+
 /* REVIEW SECTION - REVIEW IMAGES */
 #review {
-    padding: 100px 0;
+    padding: 20px 0 100px 0;
+}
+
+
+.review_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+
+
 }
 
 
@@ -541,44 +590,11 @@ h3 {
 
 
 
-/* totop button */
-
-.toTop {
-    position: fixed;
-    display: block;
-
-    bottom: 50px;
-    right: 100px;
-
-
-    width: 40px;
-    height: 40px;
-    padding: 10px 10px;
-    background: #fff;
-    border-radius: 50%;
-    color: #000;
-    text-align: center;
-    vertical-align: middle;
-    z-index: 1000;
-    border: 1px solid #ddd;
-
-    cursor: pointer;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-.toTop.on {
-    opacity: 1;
-    visibility: visible;
-}
-
 
 /* 서브페이지 공통 스타일 */
 
 .sub {
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
 }
 
 .sub h3 {
@@ -593,6 +609,10 @@ h3 {
     display: flex;
 }
 
+.sub video {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .link {
     color: #000;
@@ -602,7 +622,7 @@ h3 {
     position: absolute;
     top: 35px;
     left: 100px;
-   font-size: 0;
+    font-size: 0;
 }
 
 .sub_hdWrap h1 a {
@@ -644,6 +664,27 @@ h3 {
 
 /* sub04 EVENT LIST */
 
+.sub .event_cate>ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.bg {
+    background: #000;
+    color: #fff;
+}
+
+.sub .event_cate>ul>li {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+}
+
 
 .event_list {
     display: grid;
@@ -666,12 +707,139 @@ h3 {
     font-weight: 500;
 }
 
+.text_box {
+    padding: 30px 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    font-size: 20px;
+
+}
+
+.review_tab h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.review_tab .inner {
+    display: flex;
+
+}
+
+
+
+.review_tab .r_left {
+    flex: 1;
+    text-align: center;
+}
+
+
+.review_tab .r_left p {
+    font-size: 18px;
+    color: #000;
+    padding: 40px 0 30px;
+}
+
+.review_tab .r_left .tip {
+    border: 3px solid #000;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.review_tab .r_left .tip span {
+    display: block;
+    padding: 5px 0;
+    background: #000;
+    color: #fff;
+}
+
+
+.review_tab .r_left .tip ul {
+    padding: 30px 0;
+    text-align: start;
+    line-height: 24px;
+}
+
+.review_tab .r_left .tip ul>li {
+    padding-left: 10px;
+}
+
+.review_tab .r_left .eventdayWrap {
+    margin: 60px 50px 30px;
+    text-align: left;
+}
+
+.eventdayWrap table tr td {
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.eventdayWrap table tr td.title {
+    font-weight: 600;
+}
+
+.eventdayWrap table tr td.text {
+    padding-left: 30px;
+}
+
+.explanBox {
+    background-color: #eeeeee;
+    text-align: left;
+    padding: 20px 30px;
+    margin-top: 40px;
+}
+
+.explanBox ul li {
+
+    font-size: 13px;
+    color: #707070;
+
+    margin-left: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    color: #707070;
+}
+
+.explanBox ul li strong {
+    color: #000;
+    font-weight: 600;
+}
+
+
+.review_tab .r_right {
+    flex: 1;
+}
+
+
+/* sub06 BRAND SECTION*/
+
+
+
+
+.brand P {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand .brand_img {
+    display: flex;
+
+}
+
+.brand .brand_img img {
+    max-width: 100%;
+}
+
+
 
 /* 로그인페이지 */
 
 .log_inner {
     width: 900px;
-    margin: 0 auto;
+    margin: 100px auto 30px auto;
 }
 
 .login_wrapper {
@@ -688,10 +856,11 @@ h3 {
     flex: 1;
     padding-top: 50px;
     line-height: 10px;
- 
+
 }
 
-#mb_id , #mb_pw{
+#mb_id,
+#mb_pw {
     width: 100%;
     border: 1px solid #ddd;
     padding-top: 5px;
@@ -710,7 +879,7 @@ h3 {
     padding: 30px 0;
 }
 
-.d-grid button{
+.d-grid button {
     border: 1px solid #000;
     padding: 0 20px;
     width: 100%;
@@ -749,13 +918,11 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 30px;
-  
+
 }
 
 .myinfo {
-    height:50px;
+    height: 50px;
 }
 
-.find {
-}
-
+.find {}

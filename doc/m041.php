@@ -17,10 +17,10 @@ include_once(G5_THEME_PATH.'/head.php');
 
                     <h3>EVENT</h3>
                     <div class="shop">
-                        <div class="shop_cate">
+                        <div class="event_cate">
                             <ul>
-                                <li><a href="">진행중인 이벤트</a></li>
-                                <li><a href="">당첨자 발표</a> </li>
+                                <li class="bg"><a href="<?php echo G5_THEME_URL ?>/doc/m041.php">진행중인 이벤트</a></li>
+                                <li><a href="<?php echo G5_THEME_URL ?>/doc/m042.php">당첨자 발표</a> </li>
                             </ul>
                         </div>
                     </div>

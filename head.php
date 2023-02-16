@@ -36,10 +36,10 @@ if(defined('_INDEX_')) { // index에서만 실행
                 <div class="topBanner swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide itm01">
-                            <a href="">[회원첫구매] 15,000원 상당 케어 택1 증정<i class="xi-angle-right-min"></i></a>
+                            <a href="<?php echo G5_THEME_URL ?>/doc/m041.php">[회원첫구매] 15,000원 상당 케어 택1 증정<i class="xi-angle-right-min"></i></a>
                         </div>
                         <div class="swiper-slide itm02">
-                            <a href="">[카톡채널추가] 2천원 쿠폰 증정<i class="xi-angle-right-min"></i></a>
+                            <a href="<?php echo G5_THEME_URL ?>/doc/m041.php">[카톡채널추가] 2천원 쿠폰 증정<i class="xi-angle-right-min"></i></a>
                         </div>
                     </div>
                 </div>

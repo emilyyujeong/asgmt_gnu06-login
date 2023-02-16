@@ -27,7 +27,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="slogan">
                     <h2>NEW ARRIVALS <br />스프링 컬렉션</h2>
                     <p class="desc">봄의 다양한 색을 통해<br />나만의 캐릭터를 자유롭게 표현해보세요.</p>
-                    <a class="more" href="">자세히보기</a>
+                    <a class="more" href="<?php echo G5_THEME_URL ?>/doc/m011.php">자세히보기</a>
                 </div>
 
             </div>
@@ -35,23 +35,23 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="slogan">
                     <h2>GIFT<br />2월 포토리뷰 이벤트</h2>
                     <p class="desc">적립금 최대 5천원<br />+큐티클 오일 푸셔 쿠폰 증정</p>
-                    <a class="more" href="">자세히보기</a>
+                    <a class="more" href="<?php echo G5_THEME_URL ?>/doc/m041.php">자세히보기</a>
                 </div>
 
 
             </div>
             <div class="swiper-slide itm itm03">
                 <div class="slogan">
-                    <h2>GIFT<br />2월 포토리뷰 이벤트</h2>
-                    <p class="desc">적립금 최대 5천원<br />+큐티클 오일 푸셔 쿠폰 증정</p>
-                    <a class="more" href="">자세히보기</a>
+                    <h2>BRAND ISSUE<br />매거진 속 핑거수트</h2>
+                    <p class="desc">패션 매거진 속<br />핑거수트를 만나보세요</p>
+                    <a class="more" href="<?php echo G5_THEME_URL ?>/doc/m031.php">자세히보기</a>
                 </div>
             </div>
             <div class="swiper-slide itm itm04">
                 <div class="slogan">
-                    <h2>BRAND ISSUE<br />매거진 속 핑거수트</h2>
-                    <p class="desc">패션 매거진 속<br />핑거수트를 만나보세요</p>
-                    <a class="more" href="">자세히보기</a>
+                    <h2>CONFIDENCE<br />MAKES YOU GLOW</h2>
+                    <p class="desc">자신감이라는 스타일을 입고<br />빛나는 나를 발견하세요</p>
+                    <a class="more" href="<?php echo G5_THEME_URL ?>/doc/m021.php">자세히보기</a>
                 </div>
             </div>
         </div>
@@ -268,9 +268,6 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div class="id">#신상할인 #마블 #반시럽</div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
 
         </div>
@@ -284,7 +281,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 
-<section id="magazine">
+<section id="styleboard">
     <div class="inner">
         <div class="txt">
             <h3>STYLE BOARD</h3>
@@ -340,6 +337,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
 
             </div>
+            <div class="swiper-pagination"></div>
         </div>
 </section>
 
@@ -353,7 +351,7 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
         </div>
 
-        <div class="product_list">
+        <div class="review_list">
 
             <figure class="itm01">
                 <a href=""><img src="<?= G5_THEME_URL ?>/img/sns_img_01.jpg" alt=""></a>
