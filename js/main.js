@@ -19,6 +19,9 @@ const TOP_BANNER_SLIDE_OPTION = {
         delay: 2000,
         disableOnInteraction: false
     }
+
+
+
 };
 
 const TOP_BANNER_SLIDE = new Swiper('.topBanner', TOP_BANNER_SLIDE_OPTION);
@@ -39,14 +42,17 @@ window.addEventListener('scroll', HD_WRAP_HANDLER);
 
 
 //search
+const icon = document.querySelector('#icon');
+const target = document.querySelector('#search');
 
-let SEARCH = document.querySelector(".find");
-click.addEventListener(SEARCH, function () {
-    it.parentElement.classList.add('on')
-})
+icon.addEventListener("click", function (event) {
+    event.preventDefault();
+    target.style.width = "200px";
+    target.style.transition = "0.5s";
+});
 
 
-//..^^어떻게하는거냑
+
 
 
 //mainVisual
@@ -63,9 +69,13 @@ const MAIN_VISUAL_SLIDE_OPTION = {
         el: ".swiper-pagination",
         clickable: true,
     },
+
 }
 
 const MAIN_VISUAL_SLIDE = new Swiper('.mainSlide', MAIN_VISUAL_SLIDE_OPTION);
+
+
+//mainCollectionProduct Slide
 
 
 const MAIN_COLLECTION_SLIDE_OPTION = {
@@ -78,6 +88,9 @@ const MAIN_COLLECTION_SLIDE_OPTION = {
 }
 
 const MAIN_COLLECTION_SLIDE = new Swiper('.collection_pro', MAIN_COLLECTION_SLIDE_OPTION);
+
+
+//Styleboard - magazine pics slide
 
 
 
@@ -97,20 +110,30 @@ const STYLEBOARD_SLIDE_OPTION = {
 
 const STYLEBOARD_SLIDE = new Swiper('.style_board', STYLEBOARD_SLIDE_OPTION);
 
+
 //toTop 
 
+const TO_TOP = document.querySelector('#toTop');
+const BODY = document.querySelector('html, body');
 
 
-const TOTOP_ICON = document.querySelector('.toTop');
-
-const TOTOP_ICON_HANDLER = () => {
+console.log(window);
+const TOGGLE_TOP_BTN = () => {
     let SCT = window.scrollY;
-    SCT > 0
-        ? TOTOP_ICON.classList.add('on')
-        : TOTOP_ICON.classList.remove('on');
+    SCT > 500
+        ? TO_TOP.classList.add('on')
+        : TO_TOP.classList.remove('on')
 }
 
-window.addEventListener('scroll', TOTOP_ICON_HANDLER);
+window.addEventListener('scroll', TOGGLE_TOP_BTN);
+
+
+
+const WINDOW_TOP = () => {
+    gsap.to(window, { duration: 0.5, scrollTo: 0 });
+}
+TO_TOP.addEventListener('click', WINDOW_TOP)
+
 
 
 //로그인페이지
@@ -156,3 +179,4 @@ function kakaoLogin() {
         },
     })
 }
+

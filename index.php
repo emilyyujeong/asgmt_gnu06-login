@@ -92,9 +92,9 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_01_on.jpg" alt="" class="pro01-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
-                <div class="pr">13,800원</div>
-                <div class="id">#스테디셀러#재입고</div>
+                <div class="ht">솔티드 네일(코핀)</div>
+                <div class="pr">17,800원</div>
+                <div class="id">#신상할인#신상베스트</div>
 
                 <a href=""><i class="bi bi-bag"></i></a>
             </figure>
@@ -104,7 +104,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_02_on.jpg" alt="" class="pro02-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                <div class="ht">스웨이 네일(코핀)</div>
                 <div class="pr">13,800원</div>
                 <div class="id">#스테디셀러#재입고</div>
 
@@ -116,9 +116,9 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_03_on.jpg" alt="" class="pro03-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
-                <div class="pr">13,800원</div>
-                <div class="id">#스테디셀러#재입고</div>
+                <div class="ht">피그먼트 네일(코핀)</div>
+                <div class="pr">17,800원</div>
+                <div class="id">#신상할인#신상베스트</div>
 
                 <a href=""><i class="bi bi-bag"></i></a>
             </figure>
@@ -128,9 +128,9 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_04_on.jpg" alt="" class="pro04-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
-                <div class="pr">13,800원</div>
-                <div class="id">#스테디셀러#재입고</div>
+                <div class="ht">자유 네일(코핀)</div>
+                <div class="pr">16,800원</div>
+                <div class="id">#신상할인#신상베스트</div>
 
                 <a href=""><i class="bi bi-bag"></i></a>
             </figure>
@@ -140,7 +140,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_05_on.jpg" alt="" class="pro05-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                <div class="ht">오버롤 네일(코핀)</div>
                 <div class="pr">13,800원</div>
                 <div class="id">#스테디셀러#재입고</div>
 
@@ -152,7 +152,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_06_on.jpg" alt="" class="pro06-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                <div class="ht">스카이 플레이크 네일(코핀)</div>
                 <div class="pr">13,800원</div>
                 <div class="id">#스테디셀러#재입고</div>
 
@@ -164,7 +164,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_07_on.jpg" alt="" class="pro07-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                <div class="ht">포그 블랙 네일(코핀)</div>
                 <div class="pr">13,800원</div>
                 <div class="id">#스테디셀러#재입고</div>
 
@@ -176,7 +176,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="<?= G5_THEME_URL ?>/img/main_pro_08_on.jpg" alt="" class="pro08-1">
                 </div>
 
-                <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                <div class="ht">포그 블랙 네일(코핀)</div>
                 <div class="pr">13,800원</div>
                 <div class="id">#스테디셀러#재입고</div>
 
@@ -215,31 +215,31 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div class="img_box">
                             <img src="<?= G5_THEME_URL ?>/img/banner_slide_02.jpg" alt="">
                         </div>
-                        <div class="ht">코튼 마블 네일(오벌)</div>
+                        <div class="ht">로지 네일(코핀)</div>
                         <div class="pr">15,000원</div>
-                        <div class="id">#신상할인 #마블 #반시럽</div>
+                        <div class="id">#신상할인#세로마블</div>
                     </div>
                     <div class="swiper-slide itm itm03">
                         <div class="img_box">
                             <img src="<?= G5_THEME_URL ?>/img/banner_slide_03.jpg" alt="">
                         </div>
-                        <div class="ht">코튼 마블 네일(오벌)</div>
-                        <div class="pr">15,000원</div>
+                        <div class="ht">러브미 네일(코핀)</div>
+                        <div class="pr">18,000원</div>
                         <div class="id">#신상할인 #마블 #반시럽</div>
                     </div>
                     <div class="swiper-slide itm itm04">
                         <div class="img_box">
                             <img src="<?= G5_THEME_URL ?>/img/banner_slide_04.jpg" alt="">
                         </div>
-                        <div class="ht">코튼 마블 네일(오벌)</div>
+                        <div class="ht">아이리쉬 네일(코핀)</div>
                         <div class="pr">15,000원</div>
-                        <div class="id">#신상할인 #마블 #반시럽</div>
+                        <div class="id">#물광자석젤#그라데이션</div>
                     </div>
                     <div class="swiper-slide itm itm05">
                         <div class="img_box">
                             <img src="<?= G5_THEME_URL ?>/img/banner_slide_05.jpg" alt="">
                         </div>
-                        <div class="ht">코튼 마블 네일(오벌)</div>
+                        <div class="ht">로스트 인 뉴욕 네일(코핀)</div>
                         <div class="pr">15,000원</div>
                         <div class="id">#신상할인 #마블 #반시럽</div>
                     </div>
@@ -381,8 +381,6 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </section>
-
-
 
 
 </main>

@@ -14,6 +14,14 @@
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"
+        integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./js/main.js" defer></script>
 
 </head>
@@ -50,8 +58,8 @@
                     </ul>
                     <div class="link">
                         <ul>
-                            <li class="find"><input id="search" type="text" placeholder="검색어를 입력하세요">
-                                <a href=""><i class="bi bi-search"></i>
+                            <li id="target"><input id="search" type="text" placeholder="검색어를 입력하세요">
+                                <a href=""><i class="bi bi-search" id="icon"></i>
                                 </a>
                             </li>
                             <li><a href=""><i class="bi bi-person"></i></a></li>
@@ -508,6 +516,10 @@
             </div>
         </footer>
 
+
+    </div>
+    <div id="toTop">
+        <i class="bi bi-chevron-up"></i>
     </div>
 
 </body>
