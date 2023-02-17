@@ -54,7 +54,8 @@ if(defined('_INDEX_')) { // index에서만 실행
 ?>
                     <div class="link">
                         <ul>
-                            <li><a href=""><i class="bi bi-search"></i></a></li>
+                            <li id="target"><input id="search" type="text" placeholder="검색어를 입력하세요">
+                                <a href=""><i class="bi bi-search" id="icon"></i></a></li>
                             <li><a href="<?php echo G5_THEME_URL ?>/doc/m088.php"><i class="bi bi-person"></i></a></li>
                             <li><a href=""><i class="bi bi-bag"></i></a></li>
                         </ul>
